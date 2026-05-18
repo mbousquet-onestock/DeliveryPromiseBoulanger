@@ -155,11 +155,11 @@ export const SUPPLIER_DATA: Supplier[] = STOCKS.filter(s => s.quantity > 0).map(
     routes: [
       { 
         to: "France", 
-        cost: isWarehouse ? 209 : 199, 
+        cost: 9.99, 
         carbon: isWarehouse ? "500g" : "100g", 
         transitDays: isWarehouse ? 2 : 1, 
         cutoff: "16:00", 
-        carrier: "DS Logistique", 
+        carrier: "Boulanger", 
         direct: true 
       }
     ]

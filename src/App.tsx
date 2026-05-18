@@ -345,7 +345,7 @@ export default function App() {
         cost: `${totalTransportCost.toFixed(2)} EUR`,
         carbon: `${totalCarbon}g`,
         fees: `${(totalTransportCost * feeMultiplier).toFixed(2)} EUR`,
-        carrier: Array.from(uniqueLegs.values()).find(l => l.to === targetCountry)?.carrier || 'DS Logistique',
+        carrier: Array.from(uniqueLegs.values()).find(l => l.to === targetCountry)?.carrier || 'Boulanger',
         details: {
           suppliers: Array.from(uniqueLegs.values())
             .filter(l => !l.isHubLeg && !l.mergedIntoHub && l.to === targetCountry)
@@ -809,7 +809,7 @@ export default function App() {
                                               <td className="px-4 py-2">{sup.carbon}</td>
                                               <td className="px-4 py-2">{sup.fees}</td>
                                               <td className="px-4 py-2">
-                                                <span className="bg-gray-100 px-1.5 py-0.5 rounded text-[8px] font-bold uppercase">{sup.carrier || 'DS Logistique'}</span>
+                                                <span className="bg-gray-100 px-1.5 py-0.5 rounded text-[8px] font-bold uppercase">{sup.carrier || 'Boulanger'}</span>
                                               </td>
                                             </tr>
                                             {isExpanded && (
