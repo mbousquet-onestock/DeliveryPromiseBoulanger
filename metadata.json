@@ -1,0 +1,5 @@
+{
+  "name": "Delivery Promise Conforama",
+  "description": "An application to test delivery promises with item selection, sales channels, and destination options.",
+  "requestFramePermissions": []
+}
