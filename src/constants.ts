@@ -159,7 +159,7 @@ export const SUPPLIER_DATA: Supplier[] = STOCKS.filter(s => s.quantity > 0).map(
         carbon: isWarehouse ? "500g" : "100g", 
         transitDays: isWarehouse ? 2 : 1, 
         cutoff: "16:00", 
-        carrier: "Boulanger", 
+        carrier: "Geodis", 
         direct: true 
       }
     ]
